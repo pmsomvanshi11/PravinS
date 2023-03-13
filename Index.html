@@ -1,1 +1,142 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Index Page</title>
+    <style>
+      /* Add some basic styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Style the header */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      /* Style the menu */
+      nav {
+        background-color: #ccc;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      
+      /* Style the menu links */
+      nav a {
+        color: #333;
+        text-decoration: none;
+        padding: 5px;
+      }
+      
+      /* Style the active menu link */
+      nav a.active {
+        color: #fff;
+        background-color: #333;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      
+      /* Style the content */
+      section {
+        padding: 20px;
+      }
+      
+      /* Style the form */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+      
+      /* Style the input field */
+      input[type="text"] {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        border: none;
+      }
+      
+      /* Style the button */
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      /* Style the table */
+      table {
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      
+      /* Style the table header */
+      th {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      
+      /* Style the table cells */
+      td {
+        border: 1px solid #333;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Interactive Index Page</h1>
+    </header>
+    
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    
+    <section>
+      <h2>Welcome to our site!</h2>
+      <p>This is a sample interactive index page.</p>
+      
+      <form>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit" onclick="submitForm()">Submit</button>
+      </form>
+      
+      <div id="results">
+        <!-- The submitted form data will be displayed here -->
+      </div>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>john.doe@example.com</td>
+          </tr>
+          <tr>
+            <td>Jane Doe</td>
+            <td>jane.doe@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <script>
+      function submitForm() {
+        // Get the input value
